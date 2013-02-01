@@ -150,18 +150,19 @@
 								<format>xml</format>
 							</formats>
 							<check>
+								<haltOnFailure>true</haltOnFailure>
 								<totalLineRate>60</totalLineRate>
 							</check>
 						</configuration>
 						<executions>
-							<execution>
-								<id>cobertura-check</id>
-								<phase>package</phase>
-								<goals>
-									<goal>cobertura</goal>
-								</goals>
-							</execution>
-						</executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <!--<goal>clean</goal>--><!-- works if uncommented -->
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
 					</plugin>
 				</plugins>
 			</build>
