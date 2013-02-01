@@ -1,1 +1,6 @@
 target
+.settings
+bin
+.classpath
+.project
+.DS_*
