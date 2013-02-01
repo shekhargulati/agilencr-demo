@@ -160,6 +160,7 @@
                                 <goals>
                                     <!--<goal>clean</goal>--><!-- works if uncommented -->
                                     <goal>check</goal>
+                                    <goal>cobertura</goal>
                                 </goals>
                             </execution>
                         </executions>
